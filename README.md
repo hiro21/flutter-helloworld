@@ -1,6 +1,6 @@
 # helloworld
-
-A new Flutter project.
+以下の実践入門を試したプロジェクトです。
+https://zenn.dev/kazutxt/books/flutter_practice_introduction
 
 ## Getting Started
 
