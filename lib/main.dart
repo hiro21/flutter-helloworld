@@ -77,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(children: [
         const Text("childHelloWorld1"),
         const Text("childHelloWorld2"),
+        TextButton(
+          onPressed: () => { print("push button") }, 
+          child: const Text("text button")
+        )
       ],)
     );
   }
