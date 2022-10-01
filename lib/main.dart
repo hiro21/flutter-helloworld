@@ -72,7 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Row(children: const[
+          Icon(Icons.create),
+          Text("はじめてのタイトル")
+        ],)
       ),
       body: Column(children: [
         const Text("childHelloWorld1"),
@@ -102,7 +105,11 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         )
-      ],)
+      ],),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => { print("pushed!") },
+        child: const Icon(Icons.timer)
+      ),
     );
   }
 }
